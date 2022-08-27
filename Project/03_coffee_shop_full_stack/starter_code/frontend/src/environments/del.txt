@@ -1,0 +1,1 @@
+https://fsmg.us.auth0.com/authorize?audience=dev&response_type=token&client_id=BT08g1slPWIKQ8gWQqXHpunQmFx9k8yD&redirect_uri=https://127.0.0.1:8080/login-results
