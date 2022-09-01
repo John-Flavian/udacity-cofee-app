@@ -26,7 +26,7 @@ def index():
     return jsonify({
         'success': True,
         'message':'hello-coffee'})
-
+ 
 '''
 @TODO implement endpoint
     GET /drinks
@@ -56,9 +56,10 @@ def get_drinks():
 @app.route('/drinks-detail', methods=['GET'])
 @requires_auth('get:drinks-detail')
 def get_drink_detail(jwt):
-    all_drinks = [drink.long() for drink in Drink.query.all()]
+    drinks = Drink.query.all()
+    all_drinks = [drink.long() for drink in drinks]
  
-    return jsonify({
+    return jsonify({ 
         'success': True,
         'drinks': all_drinks
     })
