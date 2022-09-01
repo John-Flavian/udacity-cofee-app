@@ -155,10 +155,6 @@ def delete_drink(jwt, id):
 
 
 
-# @app.route('/login-results', methods=['GET'])
-# def login_results():
-#     return (jsonify({'message': 'successful login'}))
-
 
 # Error Handling
 '''
